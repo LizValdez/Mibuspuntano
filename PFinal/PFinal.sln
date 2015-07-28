@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFinal", "PFinal\PFinal.csproj", "{7A494A37-FEFE-4A31-8F5B-A5CFF93241A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mibuspuntano", "Mibuspuntano\Mibuspuntano.csproj", "{CBF3951D-5357-4D30-8AAF-AF28684B926B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7A494A37-FEFE-4A31-8F5B-A5CFF93241A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A494A37-FEFE-4A31-8F5B-A5CFF93241A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A494A37-FEFE-4A31-8F5B-A5CFF93241A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A494A37-FEFE-4A31-8F5B-A5CFF93241A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF3951D-5357-4D30-8AAF-AF28684B926B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF3951D-5357-4D30-8AAF-AF28684B926B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF3951D-5357-4D30-8AAF-AF28684B926B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF3951D-5357-4D30-8AAF-AF28684B926B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
