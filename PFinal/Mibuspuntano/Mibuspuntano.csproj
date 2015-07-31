@@ -169,6 +169,7 @@
     <Compile Include="Models\APie.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MapContext.cs" />
     <Compile Include="Models\TaxiRemises.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
