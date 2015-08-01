@@ -1,40 +1,4 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <style type="text/css">
-        html, body, #map-canvas {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
-    <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD03hPNiW1Gv-IJWj7FFQodBdY3aoFDvqY
-URLs de referencia	
-Se admite cualquier URL de referencia
-Fecha de activación	
-30 jul. 2015 13:01:00
-Activado por	
-helenabustillos@gmail.com (tú)
-Editar URL de referencia admitidas">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: { lat: -34.397, lng: 150.644},
-          zoom: 8
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-</head>
-<body>
-    <div id="map-canvas"></div>
-</body>
-</html>
-@*@{
+﻿@{
     ViewBag.Title = "Home Page";
 }
 
@@ -64,4 +28,4 @@ Editar URL de referencia admitidas">
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
-</div>*@
+</div>
