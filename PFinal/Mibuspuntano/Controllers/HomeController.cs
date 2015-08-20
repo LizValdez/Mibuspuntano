@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Mibuspuntano.Controllers
+namespace mibuspuntano.Controllers
 {
     public class HomeController : Controller
     {
@@ -15,14 +15,14 @@ namespace Mibuspuntano.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Descripci&oacute;n de la aplicaci&oacute;n";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "";
 
             return View();
         }
