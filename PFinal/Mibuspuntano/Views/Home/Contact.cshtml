@@ -1,7 +1,8 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
-<h2>@ViewBag.Title.</h2>
+﻿@*@{
+    ViewBag.Title = "Contacto
+        ";
+}*@
+@*<h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
 <address>
@@ -14,4 +15,77 @@
 <address>
     <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
     <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+</address>*@
+<div class="jumbotron jumbotron-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h1 class="h1">
+                    Cont&aacute;ctenos <br /> <small>Sientase libre de dejar sus sugerencias</small>
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Nombre
+                                </label>
+                                <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    Correo electr&oacute;nico
+                                </label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-envelope"></span>
+                                    </span>
+                                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required="required" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">
+                                    Tema
+                                </label>
+                                <select id="subject" name="subject" class="form-control" required="required">
+                                    <option value="na" selected="">Elija una opci&oacute;n:</option>
+                                    <option value="service">Servicios generales al ciente</option>
+                                    <option value="suggestions">Sugerencias</option>
+                                    <option value="product">Soporte del producto</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Mensaje
+                                </label>
+                                <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                          placeholder="Mensaje"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                Enviar mensaje
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <br>
+              <form>
+                <legend><span class="glyphicon glyphicon-globe"></span> </legend>
+
+            </form>
+        </div>
