@@ -104,7 +104,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\83.jpg" />
     <Content Include="Images\hombrecito.jpg" />
-    <Content Include="Images\taxi_logo.gif" />
+    <Content Include="Images\taxi.jpg" />
     <Content Include="js\caminos.js" />
     <Content Include="js\geo.js" />
     <Content Include="js\Geocoder.js" />
