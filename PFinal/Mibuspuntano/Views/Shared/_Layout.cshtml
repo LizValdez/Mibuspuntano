@@ -6,7 +6,10 @@
     <title> Mi Bus Puntano</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+    @RenderSection("head",false)
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -43,5 +46,7 @@
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
+    @RenderSection("scripts",false)
+
 </body>
 </html>
