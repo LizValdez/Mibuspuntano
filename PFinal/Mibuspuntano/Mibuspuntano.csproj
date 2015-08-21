@@ -94,6 +94,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\83.jpg" />
+    <Content Include="Images\hombrecito.jpg" />
+    <Content Include="Images\taxi_logo.gif" />
     <Content Include="js\caminos.js" />
     <Content Include="js\geo.js" />
     <Content Include="js\Geocoder.js" />
