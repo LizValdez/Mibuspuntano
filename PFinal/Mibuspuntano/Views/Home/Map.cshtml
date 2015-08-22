@@ -20,9 +20,9 @@
     </div>
 
     <input id="pac-input-desde" class="controls" type="text" placeholder="Desde" value="Chacabuco 702-800, D5700HLO San Luís, San Luis, Argentina">
-    <img class="controls" src="~/Images/g.png" />
+    <input type="image" class="geo" src="~/Images/g.png" onclick="geodesde()" />
     <input id="pac-input-hasta" class="controls" type="text" placeholder="Hasta" value="Belgrano 802-900, D5700GIA San Luís, San Luis, Argentina">
-    <img class="controls" src="~/Images/g.png" />
+    <input type="image" class="geo" src="~/Images/g.png" onclick="geohasta()" />
 
     <div id="map-canvas" style="float:left;width:70%; height:100%"></div>
     <div id="directionsPanel" class="panel" style="float:right;width:27%;height:100%">
@@ -32,6 +32,7 @@
     <script type="text/javascript" src="~/Scripts/botones.js"></script>
     <script type="text/javascript" src="~/Scripts/busquedadelugar.js"></script>
     <script type="text/javascript" src="~/Scripts/rutas.js"></script>
+    <script type="text/javascript" src="~/Scripts/geo.js"></script>
     <script src="~/Scripts/jquery-2.1.4.js"></script>
     <script>
         (function () {
