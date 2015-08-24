@@ -17,7 +17,7 @@ textarea {
 }
 
 
-html, body, #map-canvas {
+html, body, #map {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -104,17 +104,19 @@ pac-input:focus {
 }
 
 #botonesmapa{
-    display: block;
-    border: inset;
-    border-right-width:thick;
     float: left;
-    margin-right: 2px;
+    margin-right: 2px; 
+    bottom: 400px;
+    left: 250px;
+    position:absolute;
 }
 
 .geo{
     height: 30px;
     width: 30px;
     position: relative;
+        top: 10px;
+    right: 70px;
 }
 
 /*=========================
