@@ -4,28 +4,44 @@
 <br />
 <br />
 <br />
-<script src="~/Scripts/botones.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places,geometry,drawing"></script>
-<iframe id="mi_mapa" src="/Home/Map" width="100%" height="550" style="border:solid 0px;"></iframe>
-<div id="botonesmapa">
-    <button class="botonmapa" onclick="caminar()"> <img src="~/Images/hombrecito.jpg" /></button>
-    <button class="botonmapa" onclick="bicicleta()"> <img src="~/Images/1.png" /> </button>
-    <button class="botonmapa" onclick="taxi()"> <img src="~/Images/taxi.jpg" /></button>
-    <button class="botonmapa" onclick="colectivo()"> <img src="~/Images/83.jpg" /> </button>
-
-       
+<div id="frame">
+    <iframe id="mi_mapa" src="/Home/Map" style="border:solid 0px;"></iframe>
 </div>
+<link href="~/Content/estilo_inicio.css" rel="stylesheet" />
 
-<!--Pulling Awesome Font -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <ul id="navigationMenu">
+        <li>
+            <a class="caminando" href="#">
+                <span>Caminando</span>
+            </a>
+        </li>
 
+        <li>
+            <a class="bici" href="#">
+                <span>Bicicleta</span>
+            </a>
+        </li>
 
-<div class="col-md-12">
-    <ul class="social-network social-circle">
-        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+        <li>
+            <a class="taxi" href="#">
+                <span>Taxi</span>
+            </a>
+        </li>
+
+        <li>
+            <a class="colectivo" href="#">
+                <span>Colectivo</span>
+            </a>
+        </li>
     </ul>
-</div>
+    <!--Pulling Awesome Font -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <div class="col-md-12">
+            <ul class="social-network social-circle">
+                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
