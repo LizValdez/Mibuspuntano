@@ -47,6 +47,14 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Jmelosegui.Mvc.Googlemap">
       <HintPath>..\packages\Jmelosegui.Mvc.Googlemap.0.7.0.1\lib\net45\Jmelosegui.Mvc.Googlemap.dll</HintPath>
     </Reference>
@@ -120,11 +128,13 @@
     <Content Include="Images\colectivo.png" />
     <Content Include="Scripts\botones.js" />
     <Content Include="Scripts\busquedadelugar.js" />
+    <None Include="Properties\PublishProfiles\mibuspuntano.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\geo.js" />
     <Content Include="Scripts\jmelosegui.googlemap.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\Mapa.js" />
     <Content Include="Scripts\markerclusterer.js" />
     <Content Include="Scripts\rutas.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -137,10 +147,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Models\FormContact.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\MiBusPuntanoDbContext.cs" />
+    <Compile Include="Models\Query.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -165,7 +178,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
