@@ -1,53 +1,27 @@
-﻿@{
-    Layout = null;
-}
+﻿@{Layout = null;}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi bus puntano</title>
-    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <title>Mi bus puntano</title>
     <link href="~/Content/Site.css" rel="stylesheet" />
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places,geometry,drawing"></script>
+    <script src="~/Scripts/rutas.js"></script>
+    <script src="~/Scripts/geo.js"></script>
+    <script src="~/Scripts/busquedadelugar.js"></script>
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>  
 </head>
-<body>
-    <div id="map"></div>
-    <div id="botonesmapa">
-        <input id="pac-input-desde" class="controls" type="text" placeholder="Ingrese origen">
-        <input type="image" class="geo" src="~/Images/g.png" onclick="geodesde()" />
-        <input id="pac-input-hasta" class="controls" type="text" placeholder="Ingrese destino">
-        <input type="image" class="geo" src="~/Images/g.png" onclick="geohasta()" />
-    </div>
-    <script>
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: new google.maps.LatLng(-33.302248, -66.336788),
-                disableDefaultUI: true,
-                MapTypeControl: true,
-                streetViewControl: true,
-                ZoomControl: true,
-                zoom: 16
-            });
-        }
-
-    </script>
-
-    <script type="text/javascript" src="~/Scripts/busquedadelugar.js"></script>
-    <script type="text/javascript" src="~/Scripts/rutas.js"></script>
-    <script type="text/javascript" src="~/Scripts/geo.js"></script>
-    <script src="~/Scripts/jquery-2.1.4.js"></script>
-    <script>
-        (function () {
-            initialize();
-        })();
-    </script>
-
-</body>
+<body onload="iniciar()">
+        <div id="map" style="float:left;width:63%; height:100%"></div>
+        <div id="botonesmapa">
+            <input id="pac-input-desde" class="controls" type="text" placeholder="Ingrese origen" value="Chacabuco 702-800, San Luis, Argentina">
+            <input type="image" id="1" class="geo" src="~/Images/g.png" onclick="geodesde()"/>
+            <input id="pac-input-hasta" class="controls" type="text" placeholder="Ingrese destino" value="Junin 702-800, San Luis, Argentina">
+            <input type="image" id="2" class="geo" src="~/Images/g.png" onclick="geohasta()"/>
+            <</div>
+            <div id="directionsPanel" class="panel" style="float:right;width:34%;height: 100%">
+                <p>Total Distance: <span id="total"></span></p>
+            </div>
+    </body>
 </html>
-
-
-
-
-
-
-

@@ -1,47 +1,49 @@
-﻿
-@{ ViewBag.Title = "Mi Bus Puntano"; }
+﻿@{ ViewBag.Title = "Mi Bus Puntano"; }
 
 <br />
 <br />
 <br />
 <div id="frame">
     <iframe id="mi_mapa" src="/Home/Map" style="border:solid 0px;"></iframe>
+
 </div>
 <link href="~/Content/estilo_inicio.css" rel="stylesheet" />
+<div class="panel panel-default">
+    <div class="panel-body">
+<ul id="navigationMenu">
+    <a class="caminando" href="#">
+        <span>Caminando</span>
+    </a>
 
-    <ul id="navigationMenu">
-        <li>
-            <a class="caminando" href="#">
-                <span>Caminando</span>
-            </a>
-        </li>
+    <a class="bici" href="#">
+        <span>Bicicleta</span>
+    </a>
 
-        <li>
-            <a class="bici" href="#">
-                <span>Bicicleta</span>
-            </a>
-        </li>
+    <a class="taxi" href="#">
+        <span>Taxi</span>
+    </a>
 
-        <li>
-            <a class="taxi" href="#">
-                <span>Taxi</span>
-            </a>
-        </li>
+    <a class="colectivo" href="#">
+        <span>Colectivo</span>
+    </a>
 
-        <li>
-            <a class="colectivo" href="#">
-                <span>Colectivo</span>
-            </a>
-        </li>
+</ul>
+      
+    </div>
+</div>
+
+
+
+
+
+<!--Pulling Awesome Font -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="col-md-12">
+    <ul class="social-network social-circle">
+        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
     </ul>
-    <!--Pulling Awesome Font -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <div class="col-md-12">
-            <ul class="social-network social-circle">
-                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-        </div>
+</div>
