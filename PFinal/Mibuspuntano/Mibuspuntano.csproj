@@ -115,8 +115,10 @@
     <Content Include="Global.asax" />
     <Content Include="Images\bicicleta.png" />
     <Content Include="Images\colectivo.jpg" />
+    <Content Include="Images\darkgreen_MarkerA.png" />
     <Content Include="Images\g.png" />
     <Content Include="Images\hombrecito.jpg" />
+    <Content Include="Images\red_MarkerB.png" />
     <Content Include="Images\taxi.jpg" />
     <Content Include="Images\colectivo.png" />
     <Content Include="Images\taxi_logo.gif" />
