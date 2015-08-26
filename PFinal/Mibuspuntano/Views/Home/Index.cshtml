@@ -4,26 +4,26 @@
 <br />
 <br />
 <div id="frame">
-    <iframe id="mi_mapa" src="/Home/Map" style="border:solid 0px;"></iframe>
+    <iframe id="mi_mapa" name="mi_mapa" src="/Home/Map" style="border:solid 0px;"></iframe>
 
 </div>
 <link href="~/Content/estilo_inicio.css" rel="stylesheet" />
 <div class="panel panel-default">
     <div class="panel-body">
 <ul id="navigationMenu">
-    <a class="caminando" href="#">
+    <a class="caminando" href="~/Views/Map/MapaCaminando.cshtml" target="mi_mapa">
         <span>Caminando</span>
     </a>
 
-    <a class="bici" href="#">
+    <a class="bici" href="~/Views/Map/MapaBicicleta.cshtml" target="mi_mapa">
         <span>Bicicleta</span>
     </a>
 
-    <a class="taxi" href="#">
+    <a class="taxi" href="~/Views/Map/MapaTaxi.cshtml" target="mi_mapa">
         <span>Taxi</span>
     </a>
 
-    <a class="colectivo" href="#">
+    <a class="colectivo" href="~/Views/Map/MapaColectivo.cshtml" target="mi_mapa">
         <span>Colectivo</span>
     </a>
 

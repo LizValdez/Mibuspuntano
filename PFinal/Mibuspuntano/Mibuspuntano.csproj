@@ -122,8 +122,10 @@
     <Content Include="Images\red_MarkerB.png" />
     <Content Include="Images\taxi.jpg" />
     <Content Include="Images\taxi_logo.jpg" />
+    <Content Include="Scripts\bicicleta.js" />
     <Content Include="Scripts\botones.js" />
     <Content Include="Scripts\busquedadelugar.js" />
+    <Content Include="Scripts\caminando.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\geo.js" />
@@ -141,6 +143,10 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\taxi.js" />
+    <Content Include="Views\Map\Mapa.cshtml">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
@@ -163,11 +169,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Views\Home\Map.cshtml" />
-    <Content Include="Views\Map\Mapa.cshtml" />
+    <Content Include="Views\Map\MapaCaminando.cshtml" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
-    <Content Include="Views\Map\Mapa.cshtml">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="Views\Map\MapaBicicleta.cshtml" />
+    <Content Include="Views\Map\MapaTaxi.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
