@@ -115,15 +115,13 @@
     <Content Include="Global.asax" />
     <Content Include="Images\bicicleta.png" />
     <Content Include="Images\colectivo.jpg" />
+    <Content Include="Images\colectivo.png" />
     <Content Include="Images\darkgreen_MarkerA.png" />
     <Content Include="Images\g.png" />
     <Content Include="Images\hombrecito.jpg" />
     <Content Include="Images\red_MarkerB.png" />
     <Content Include="Images\taxi.jpg" />
-    <Content Include="Images\colectivo.png" />
-    <Content Include="Images\taxi_logo.gif" />
     <Content Include="Images\taxi_logo.jpg" />
-    <Content Include="Images\ugarte10.png" />
     <Content Include="Scripts\botones.js" />
     <Content Include="Scripts\busquedadelugar.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
