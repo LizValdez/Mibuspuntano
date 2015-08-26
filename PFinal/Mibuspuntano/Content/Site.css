@@ -88,7 +88,7 @@ pac-input:focus {
     padding: 5px 11px 0px 11px;
 }
 
-    #type-selector label {
+#type-selector label {
         font-family: Roboto;
         font-size: 13px;
         font-weight: 300;
@@ -227,4 +227,8 @@ a.socialIcon:hover, .socialHoverClass {
 
 a {
  background-color: #D3D3D3;   
+}
+
+ul.nav li a {
+    background-color: #E0781B;
 }
