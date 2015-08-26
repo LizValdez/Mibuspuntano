@@ -53,14 +53,14 @@ html, body, #map {
     }
 
 .controls {
-    margin-top: 16px;
+    margin-top: 25px;
     border: 1px solid transparent;
     border-radius: 2px 0 0 2px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    height: 32px;
+    height: 38px;
     outline: none;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
 }
 
 button, input {
@@ -105,6 +105,17 @@ pac-input:focus {
     position: relative;
     top: 18px;
     right: 28px;
+    z-index: 1;
+}
+
+#1{
+   top: 16px;
+    right: 815px;
+}
+
+#2{
+      top: 17px;
+    right: 616px;
 }
 
 .ab {
@@ -112,6 +123,21 @@ pac-input:focus {
     position: relative;
     top: 18px;
     right: 28px;
+    z-index: 1;
+}
+
+
+
+
+
+#a{
+   top: 16px;
+    right: 815px;
+}
+
+#b{
+      top: 17px;
+    right: 616px;
 }
 
 
