@@ -124,6 +124,7 @@
     <Content Include="Images\hombrecito.jpg" />
     <Content Include="Scripts\botones.js" />
     <Content Include="Scripts\busquedadelugar.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Properties\PublishProfiles\mibuspuntano.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\geo.js" />

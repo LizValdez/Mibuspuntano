@@ -106,3 +106,7 @@ float: left;
     top: 10px;
     right: 70px;
 }
+
+ul.nav li a {
+    background-color: #E0781B;
+}
