@@ -1,9 +1,21 @@
-﻿/* Set width on the form input elements since they're 100% wide by default */
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
 }
+
 
 html, body, #map {
     height: 100%;
@@ -41,14 +53,14 @@ html, body, #map {
     }
 
 .controls {
-    margin-top: 16px;
+    margin-top: 25px;
     border: 1px solid transparent;
     border-radius: 2px 0 0 2px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    height: 32px;
+    height: 38px;
     outline: none;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
 }
 
 button, input {
@@ -86,25 +98,135 @@ pac-input:focus {
     width: 345px;
 }
 
-.botonmapa{
-    width: 70px;
-    height:50px;
-}
 
-#botonesmapa{
-float: left;
-    margin-right: 2px;
-    bottom: 480px;
-    left: 200px;
-    position: absolute;
-}
-
-.geo{
-    height: 25px;
-    width: 25px;
+.geo {
+    height: 30px;
+    width: 30px;
     position: relative;
-    top: 10px;
-    right: 70px;
+    top: 18px;
+    right: 28px;
+    z-index: 1;
+}
+
+#1{
+   top: 16px;
+    right: 815px;
+}
+
+#2{
+      top: 17px;
+    right: 616px;
+}
+
+.ab {
+
+    position: relative;
+    top: 18px;
+    right: 28px;
+    z-index: 1;
+}
+
+
+
+
+
+#a{
+   top: 16px;
+    right: 815px;
+}
+
+#b{
+      top: 17px;
+    right: 616px;
+}
+
+
+
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+ul.social-network {
+    background-color:rgba(0, 0, 0, 0.3);
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+a {
+ background-color: #D3D3D3;   
 }
 
 ul.nav li a {
