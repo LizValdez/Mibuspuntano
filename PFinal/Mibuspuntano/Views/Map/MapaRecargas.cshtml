@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "MapaRecargas";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8">
+    <title>Mi bus puntano</title>
+    <link href="/css/Site.css" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places,geometry,drawing"></script>
+    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer_compiled.js"></script>
+</head>
+
+<body onload="initialize()">
+
+    <div id="map" style="float:left;width:80%; height:100%"></div>
+    
+    <script src="~/Scripts/recargas.js"></script>
+    <script src="~/Scripts/jquery-2.1.4.js"></script>
+</body>
+</html>
