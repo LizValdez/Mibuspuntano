@@ -144,12 +144,10 @@
     <None Include="Scripts\jquery-2.1.4-vsdoc.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
-    <Content Include="Scripts\Mapa.js" />
     <Content Include="Scripts\markerclusterer.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\prueba.js" />
     <Content Include="Scripts\recargas.js" />
     <Content Include="Scripts\ruta.js" />
     <Content Include="Scripts\taxi.js" />
