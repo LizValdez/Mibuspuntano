@@ -10,7 +10,7 @@ namespace mibuspuntano.Controllers
 {
     public class HomeController : Controller
 
-    //cambios!
+   
 {
         public ActionResult Index()
         {
