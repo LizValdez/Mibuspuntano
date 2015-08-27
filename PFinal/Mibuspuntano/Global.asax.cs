@@ -16,7 +16,7 @@ namespace mibuspuntano
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MiBusPuntanoDbContext>());
+         Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MiBusPuntanoDbContext>());
         }
     }
 }
