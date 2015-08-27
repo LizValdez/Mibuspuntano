@@ -150,6 +150,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\prueba.js" />
+    <Content Include="Scripts\recargas.js" />
     <Content Include="Scripts\ruta.js" />
     <Content Include="Scripts\taxi.js" />
     <Content Include="Web.config" />
@@ -202,7 +203,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59009</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
