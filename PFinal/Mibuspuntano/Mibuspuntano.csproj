@@ -137,8 +137,8 @@
     <Content Include="Scripts\bicicleta.js" />
     <Content Include="Scripts\botones.js" />
     <Content Include="Scripts\busquedadelugar.js" />
-    <Content Include="Scripts\caminando.js" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\caminando.js" />
     <Content Include="Scripts\geo.js" />
     <Content Include="Scripts\jmelosegui.googlemap.js" />
     <None Include="Scripts\jquery-2.1.4-vsdoc.js" />
