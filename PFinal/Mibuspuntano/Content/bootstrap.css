@@ -4695,7 +4695,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: #511c39;
   color: #ffffff;
 }
-@media (max-width: 767px) {
+@media (max-width: 7px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #511c39;
   }
@@ -6889,6 +6889,71 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
-a {
- background-color: #D3D3D3;   
+
+/* social media*/
+/*.mobile-social-share {
+    background: none repeat scroll 0 0 #EEEEEE;
+    display: block !important;
+    min-height: 70px !important;
+    margin: 50px 0;
+}*/
+
+/*.share-group {
+    float: right;
+    margin: 18px 25px 0 0;
+}*/
+
+/*.btn-group {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+}*/
+
+/*.mobile-social-share ul {
+    float: right;
+    list-style: none outside none;
+    margin: 0;
+    min-width: 61px;
+    padding: 0;
+}*/
+
+.share {
+    min-width: 10px;
 }
+
+.mobile-social-share li {
+    display: block;
+    font-size: 18px;
+    list-style: none outside none;
+    margin-bottom: 3px;
+    margin-left: 4px;
+    margin-top: 3px;
+}
+#socialShare {
+    max-width:59px;
+    margin-bottom:18px;
+}
+
+#socialShare > a{
+    padding: 6px 10px 6px 10px;
+}
+
+@media (max-width : 220px) {
+    #socialHolder{
+        padding-left:5px;
+        padding-right:5px;
+    }
+    
+  
+    
+    #socialShare{
+        margin-left:5px;
+        margin-right:5px;
+    }
+    
+   
+}
+
+

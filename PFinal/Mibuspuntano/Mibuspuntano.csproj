@@ -121,12 +121,16 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\bicicleta.jpg" />
     <Content Include="Images\bicicleta.png" />
     <Content Include="Images\colectivo.jpg" />
     <Content Include="Images\colectivo.png" />
+    <Content Include="Images\darkgreen_MarkerA.jpg" />
     <Content Include="Images\darkgreen_MarkerA.png" />
+    <Content Include="Images\g.jpg" />
     <Content Include="Images\g.png" />
     <Content Include="Images\hombrecito.jpg" />
+    <Content Include="Images\red_MarkerB.jpg" />
     <Content Include="Images\red_MarkerB.png" />
     <Content Include="Images\taxi.jpg" />
     <Content Include="Images\taxi_logo.jpg" />
