@@ -47,12 +47,16 @@ namespace mibuspuntano.Controllers
                         db.Queries.Add(query);
                         db.SaveChangesAsync();
                     }
-
+                                              
                     var message = new MailMessage();
-                    message.Subject = form.Subject;
-                    message.Body = "<"+form.Message;
+                    message.Subject ="RE: "+ form.Subject;
+                    message.Body = "Hemos recibido su mensaje. Gracias por comunicarse con nosotros";
+                    message.Body = "";
+                    message.Body = "";
+                    message.Body = "Administración de Mi Bus Puntano";
+                    message.Body = form.Message;
                     message.IsBodyHtml = true;
-                    message.From = new MailAddress("admin@mibuspuntano.com", "Administracion de Mi Bus Puntano");
+                    message.From = new MailAddress("admin@mibuspuntano.com", "Mi Bus Puntano");
 
                     message.To.Add(new MailAddress(form.Email, form.Name));
 
@@ -63,8 +67,9 @@ namespace mibuspuntano.Controllers
                 }
             }
 
-            ViewBag.SendMessage = "Hemos recibido su consulta, a la brevedad lo contactaremos";
+            ViewBag.SendMessage = "Su consulta se ha enviado correctamente";
             return View();
+            
         }
         public ActionResult Map()
         {
