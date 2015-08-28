@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 20px;
 }
 
@@ -37,7 +37,7 @@ html, body, #map {
 
 #panel, .panel {
     font-family: 'Roboto','sans-serif';
-    line-height: 30px;
+    line-height: 10px;
     padding-left: 10px;
 }
 
@@ -68,12 +68,12 @@ button, input {
     font-family: Roboto;
     font-size: 15px;
     font-weight: 300;
-        margin-left: 15px;
-    margin-bottom: -12px;
+    margin-left: 12px;
     padding: 0 11px 0 13px;
     text-overflow: ellipsis;
     width: 300px;
 }
+
 
 pac-input:focus {
     border-color: #4d90fe;
@@ -143,23 +143,64 @@ pac-input:focus {
  ================= */
 
 /* footer social icons */
-ul.social-network {
+/*.mobile-social-share {
+    background: none repeat scroll 0 0 #EEEEEE;
+    display: block !important;
+    min-height: 70px !important;
+    margin: 50px 0;
+}*/
+/*.share-group {
+    float: right;
+    margin: 18px 25px 0 0;
+}*/
+
+.btn-group {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.mobile-social-share ul {
+    float: right;
+    list-style: none outside none;
+    margin: 0;
+    min-width: 61px;
+    padding: 0;
+}
+
+.share {
+    min-width: 17px;
+}
+
+/*.mobile-social-share li {
+    display: block;
+    font-size: 18px;
+    list-style: none outside none;*/
+    /*margin-bottom: 3px;
+    margin-left: 4px;
+    margin-top: 3px;*/
+}
+/*ul.social-network {
     background-color:rgba(0, 0, 0, 0.3);
 	list-style: none;
 	display: inline;
 	margin-left:0 !important;
 	padding: 0;
-}
+}*/
 ul.social-network li {
 	display: inline;
 	margin: 0 5px;
 }
 
-
-/* footer social icons */
-.social-network a.icoRss:hover {
-	background-color: #F56505;
+.btn-share {
+    background-color: #BEBEBE;
+    border-color: #CCCCCC;
+    color: #333333;
 }
+/* footer social icons */
+
 .social-network a.icoFacebook:hover {
 	background-color:#3B5998;
 }
@@ -175,10 +216,10 @@ ul.social-network li {
 .social-network a.icoLinkedin:hover {
 	background-color:#007bb7;
 }
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+/*.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
 	color:#fff;
-}
+}*/
 a.socialIcon:hover, .socialHoverClass {
 	color:#44BCDD;
 }
@@ -219,4 +260,12 @@ a.socialIcon:hover, .socialHoverClass {
 	-o-transition: all 0.8s;
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
+}
+
+a {
+ background-color: #D3D3D3;   
+}
+
+ul.nav li a {
+    background-color: #E0781B;
 }
