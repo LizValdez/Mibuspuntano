@@ -23,16 +23,17 @@ html, body, #map {
     padding: 0;
 }
 
-#panel {
-    position: relative;
-    top: 5px;
-    left: 50%;
-    margin-left: -180px;
+#panel{
+       position: absolute;
+    top: 135px;
+    left: 86%;
+    margin-left: -173px;
     z-index: 5;
-    background-color: #fff;
+    background-color: rgba(226, 113, 26, 0.46);
     padding: 5px;
     border: 1px solid #999;
 }
+
 
 #panel, .panel {
     font-family: 'Roboto','sans-serif';
@@ -53,12 +54,11 @@ html, body, #map {
     }
 
 .controls {
-    margin-top: 25px;
+        margin-top: 3px;
     border: 1px solid transparent;
     border-radius: 2px 0 0 2px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     -moz-box-sizing: border-box;
-    height: 38px;
     outline: none;
     box-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
 }
@@ -68,7 +68,8 @@ button, input {
     font-family: Roboto;
     font-size: 15px;
     font-weight: 300;
-    margin-left: 12px;
+        margin-left: 15px;
+    margin-bottom: -12px;
     padding: 0 11px 0 13px;
     text-overflow: ellipsis;
     width: 400px;
@@ -100,10 +101,11 @@ pac-input:focus {
 
 
 .geo {
-    height: 30px;
-    width: 30px;
+    height: 26px;
+    width: 50px;
     position: relative;
-    top: 18px;
+    top: -34px;
+    left: 252px;
     right: 28px;
     z-index: 1;
 }
@@ -120,24 +122,18 @@ pac-input:focus {
 
 .ab {
 
-    position: relative;
-    top: 18px;
-    right: 28px;
+    position: absolute;
     z-index: 1;
 }
 
-
-
-
-
 #a{
-   top: 16px;
-    right: 815px;
+    top: 9px;
+    left: 2px;
 }
 
 #b{
-      top: 17px;
-    right: 616px;
+     top: 73px;
+    right: 339px;
 }
 
 
@@ -223,12 +219,4 @@ a.socialIcon:hover, .socialHoverClass {
 	-o-transition: all 0.8s;
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
-}
-
-a {
- background-color: #D3D3D3;   
-}
-
-ul.nav li a {
-    background-color: #E0781B;
 }

@@ -130,6 +130,7 @@
     <Content Include="Images\g.jpg" />
     <Content Include="Images\g.png" />
     <Content Include="Images\hombrecito.jpg" />
+    <Content Include="Images\hombrecito.png" />
     <Content Include="Images\red_MarkerB.jpg" />
     <Content Include="Images\red_MarkerB.png" />
     <Content Include="Images\taxi.jpg" />
@@ -186,6 +187,7 @@
     <Content Include="Views\Map\MapaBicicleta.cshtml" />
     <Content Include="Views\Map\MapaTaxi.cshtml" />
     <Content Include="Views\Map\MapaRecargas.cshtml" />
+    <Content Include="Views\Home\MapaInicio.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

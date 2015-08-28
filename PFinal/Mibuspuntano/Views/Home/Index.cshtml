@@ -2,36 +2,46 @@
 
 <br />
 <br />
-
-<iframe id="mi_mapa" name="mi_mapa" src="/Views/Home/MapaInicio.html"></iframe>
-
 <link href="~/Content/estilo_inicio.css" rel="stylesheet" />
-<div class="panel panel-default">
-    <div class="panel-body">
-<ul id="navigationMenu">
-    <a class="caminando" href="~/Views/Map/MapaCaminando.cshtml" target="mi_mapa">
-        <span>Caminando</span>
-    </a>
+<link href="~/Content/Site.css" rel="stylesheet" />
 
-    <a class="bici" href="~/Views/Map/MapaBicicleta.cshtml" target="mi_mapa">
-        <span>Bicicleta</span>
-    </a>
+<iframe id="mi_mapa" name="mi_mapa" src="/Views/Home/MapaInicio.html" style="border:dashed;"></iframe>
 
-    <a class="taxi" href="~/Views/Map/MapaTaxi.cshtml" target="mi_mapa">
-        <span>Taxi</span>
-    </a>
+<div id="panel">
+  
+    <img id="a" src="~/Images/darkgreen_MarkerA.png" class="ab"/>
+    <input id="pac-input-desde" class="controls" type="text" placeholder="Ingrese origen" value="Hipólito Irigoyen 601-699, D5702BHJ San Luís, San Luis, Argentina">    
+    <input type="image" class="geo" id="1" src="~/Images/g.png" onclick="geodesde()" />
+        <img id="b" src="~/Images/red_MarkerB.png" class="ab" />
+    <input id="pac-input-hasta" class="controls" type="text" placeholder="Ingrese destino" value=" Junin 601-699, D5702BHJ San Luís, San Luis, Argentina">
+    <input type="image" class="geo" id="2" src="~/Images/g.png" onclick="geohasta()" />
+    <div id="navegador">
+        <ul>
+            <a class="caminando" href="~/Views/Map/MapaCaminando.cshtml" target="mi_mapa">
+                <span>Caminando</span>
+            </a>
 
-    <a class="colectivo" href="~/Views/Map/MapaColectivo.cshtml" target="mi_mapa">
-        <span>Colectivo</span>
-    </a>
+            <a class="bici" href="~/Views/Map/MapaBicicleta.cshtml" target="mi_mapa">
+                <span>Bicicleta</span>
+            </a>
 
-</ul>
-      
+            <a class="taxi" href="~/Views/Map/MapaTaxi.cshtml" target="mi_mapa">
+                <span>Taxi</span>
+            </a>
+
+            <a class="colectivo" href="~/Views/Map/MapaColectivo.cshtml" target="mi_mapa">
+                <span>Colectivo</span>
+            </a>
+        </ul>
     </div>
+
+    
 </div>
-
-
-
-
-
+<script type="text/javascript" src="~/Scripts/busquedadelugar.js"></script>
+<script type="text/javascript" src="~/Scripts/bicicleta.js"></script>
+<script type="text/javascript" src="~/Scripts/geo.js"></script>
+<script type="text/javascript" src="~/Scripts/caminando.js"></script>
+<script type="text/javascript" src="~/Scripts/ruta.js"></script>
+<script type="text/javascript" src="~/Scripts/lineas.js"></script>
+<script type="text/javascript" src="~/Scripts/taxi.js"></script>
 

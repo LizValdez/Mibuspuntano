@@ -20,8 +20,8 @@ var defaultBounds = new google.maps.LatLngBounds(
   new google.maps.LatLng(-33.303324, -66.403393),
   new google.maps.LatLng(-33.264004, -66.287693));
 map.fitBounds(defaultBounds);
-var desde = (document.getElementById('pac-input-desde'));
-var hasta = (document.getElementById('pac-input-hasta'));
+var desde = window.parent(document.getElementById('pac-input-desde'));
+var hasta = window.parent(document.getElementById('pac-input-hasta'));
 
 map.controls[google.maps.ControlPosition.TOP_LEFT].push(desde);
 map.controls[google.maps.ControlPosition.TOP_LEFT].push(hasta);
@@ -30,7 +30,7 @@ map.controls[google.maps.ControlPosition.TOP_LEFT].push(hasta);
 function initialize() {
 
     directionsDisplay.setMap(map);
-    directionsDisplay.setPanel(document.getElementById('directionsPanel'));
+    directionsDisplay.setPanel(wndows.parent(document.getElementById('Panel')));
     google.maps.event.addListener(directionsDisplay, 'directions_changed', function () {
         computeTotalDistance(directionsDisplay.getDirections());
     });
@@ -53,31 +53,44 @@ function initialize() {
             }
         });
     }
-///////////////Oooooooooooooooooooooooooooooooooooooooooooooooooooooh
+    ///////////////Oooooooooooooooooooooooooooooooooooooooooooooooooooooh
     calcRoute();
 
     function computeTotalDistance(result) {
         var total = 0;
         var myroute = result.routes[0];
+        var preciodia = 1.2;
+        var precionoche = 1.32;
+        var banderadia = 13;
+        var banderanoche = 14.3;
+        var metros = 0.18;
+        var tiempo = new Date();
+        var hora = tiempo.getHours();
         for (var i = 0; i < myroute.legs.length; i++) {
             total += myroute.legs[i].distance.value;
         }
         total = total / 1000.0;
-        document.getElementById('total').innerHTML = total + ' km';
+
+        if (hora <= "22" && hora >= "6") {
+            //180=1.2 distance =
+            var multiplicacion = total * preciodia;
+            var division = multiplicacion / metros;
+        }
+        else {
+            var multiplicacion = total * precionoche;
+            var division = multiplicacion / metros;
+        }
+
+        document.getElementById('total').innerHTML = total + ' km' + ' ' + '$ ' + division;
 
         var latlng = { lat: result.request.origin.G, lng: result.request.origin.K };
         geocoder.geocode({ 'location': latlng }, function (results, status) {
-            document.getElementById('pac-input-desde').value = results[0].formatted_address;
+            desde.value = results[0].formatted_address;
         });
 
         var latlng1 = { lat: result.request.destination.G, lng: result.request.destination.K };
         geocoder.geocode({ 'location': latlng1 }, function (results, status) {
-            document.getElementById('pac-input-hasta').value = results[0].formatted_address;
+            hasta.value = results[0].formatted_address;
         });
     }
-
 }
-
-
-
-
