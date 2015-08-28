@@ -52,7 +52,8 @@ namespace mibuspuntano.Controllers
                                               
                     var message = new MailMessage();
                     message.Subject ="RE: "+ form.Subject;
-                    message.Body = "Hemos recibido su mensaje. Gracias por comunicarse con nosotros"+"Administración de Mi Bus Puntano"+ form.Message;
+                    message.Body = "Hemos recibido su mensaje. <br/> Gracias por comunicarse con nosotros" + "<br/><br/><br/>Administración de Mi Bus Puntano";
+                    // PARA AGREGAR LUEGO +form.Message;
                     message.IsBodyHtml = true;
                     message.From = new MailAddress("admin@mibuspuntano.com", "Mi Bus Puntano");
 
