@@ -5,9 +5,9 @@
 <link href="~/Content/estilo_inicio.css" rel="stylesheet" />
 <link href="~/Content/Site.css" rel="stylesheet" />
 
-<iframe id="mi_mapa" name="mi_mapa" src="/Views/Home/MapaInicio.html" style="border:dashed;"></iframe>
+<iframe id="mi_mapa" name="mi_mapa" src="/MapaInicio.html" ></iframe>
 
-<div id="panel">
+<div id="panel" class="dropdown">
   
     <img id="a" src="~/Images/darkgreen_MarkerA.png" class="ab"/>
     <input id="pac-input-desde" class="controls" type="text" placeholder="Ingrese origen" value="Hipólito Irigoyen 601-699, D5702BHJ San Luís, San Luis, Argentina">    
@@ -17,20 +17,20 @@
     <input type="image" class="geo" id="2" src="~/Images/g.png" onclick="geohasta()" />
     <div id="navegador">
         <ul>
-            <a class="caminando" href="~/Views/Map/MapaCaminando.cshtml" target="mi_mapa">
+            <a class="caminando" href="/Map/MapaCaminando" target="mi_mapa">
                 <span>Caminando</span>
             </a>
 
-            <a class="bici" href="~/Views/Map/MapaBicicleta.cshtml" target="mi_mapa">
+            <a class="bici" href="/Map/MapaBicicleta" target="mi_mapa">
                 <span>Bicicleta</span>
             </a>
 
-            <a class="taxi" href="~/Views/Map/MapaTaxi.cshtml" target="mi_mapa">
+            <a class="taxi" href="/Map/MapaTaxi" target="mi_mapa">
                 <span>Taxi</span>
             </a>
 
-            <a class="colectivo" href="~/Views/Map/MapaColectivo.cshtml" target="mi_mapa">
-                <span>Colectivo</span>
+            <a class="colectivo" href="Map/MapaRecargas" target="mi_mapa">
+                <span>Recarga</span>
             </a>
         </ul>
     </div>
@@ -42,6 +42,6 @@
 <script type="text/javascript" src="~/Scripts/geo.js"></script>
 <script type="text/javascript" src="~/Scripts/caminando.js"></script>
 <script type="text/javascript" src="~/Scripts/ruta.js"></script>
-<script type="text/javascript" src="~/Scripts/lineas.js"></script>
+@*<script type="text/javascript" src="~/Scripts/lineas.js"></script>*@
 <script type="text/javascript" src="~/Scripts/taxi.js"></script>
 

@@ -145,6 +145,7 @@
     <None Include="Scripts\jquery-2.1.4-vsdoc.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\lineas.js" />
     <Content Include="Scripts\markerclusterer.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -159,6 +160,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
       <SubType>Code</SubType>
@@ -189,7 +191,7 @@
     <Content Include="Views\Map\MapaBicicleta.cshtml" />
     <Content Include="Views\Map\MapaTaxi.cshtml" />
     <Content Include="Views\Map\MapaRecargas.cshtml" />
-    <Content Include="Views\Home\MapaInicio.html" />
+    <Content Include="MapaInicio.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
