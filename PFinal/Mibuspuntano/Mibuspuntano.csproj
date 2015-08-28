@@ -136,7 +136,6 @@
     <Content Include="Images\taxi.jpg" />
     <Content Include="Images\taxi_logo.jpg" />
     <Content Include="Scripts\bicicleta.js" />
-    <Content Include="Scripts\botones.js" />
     <Content Include="Scripts\busquedadelugar.js" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\caminando.js" />

@@ -30,7 +30,7 @@ map.controls[google.maps.ControlPosition.TOP_LEFT].push(hasta);
 function initialize() {
 
     directionsDisplay.setMap(map);
-    directionsDisplay.setPanel(wndows.parent(document.getElementById('Panel')));
+    directionsDisplay.setPanel(wndows.parent(document.getElementById('recorridos')));
     google.maps.event.addListener(directionsDisplay, 'directions_changed', function () {
         computeTotalDistance(directionsDisplay.getDirections());
     });
