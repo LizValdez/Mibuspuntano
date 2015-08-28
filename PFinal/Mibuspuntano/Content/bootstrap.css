@@ -1091,6 +1091,7 @@ body {
   line-height: 1.42857143;
   color: #333333;
   background-color: #ffffff;
+  padding-top: 70px
 }
 input,
 button,
@@ -4228,7 +4229,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-header {
-    float: left;
+    float: right;
   }
 }
 .navbar-collapse {
